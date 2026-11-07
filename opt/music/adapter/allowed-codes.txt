@@ -1,0 +1,7 @@
+# Một mã 6 số mỗi dòng. Thêm dòng là kích hoạt, không cần restart.
+# Dòng bắt đầu bằng # được bỏ qua.
+729062
+108544
+RBE901
+RBD9ED
+RBE329

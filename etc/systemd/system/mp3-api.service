@@ -1,0 +1,12 @@
+[Unit]
+Description=MP3 API
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/music/mp3-api
+Environment=PORT=5555
+ExecStart=/usr/bin/node server.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

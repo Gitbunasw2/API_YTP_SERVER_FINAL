@@ -1,0 +1,11 @@
+services:
+  youtube-music:
+    build: .
+    ports:
+      - "5007:5007"
+    volumes:
+      - youtube-cache:/data
+    restart: unless-stopped
+
+volumes:
+  youtube-cache:

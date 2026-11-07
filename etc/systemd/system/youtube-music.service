@@ -1,0 +1,16 @@
+[Unit]
+Description=YouTube Music cho Xiaozhi
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/youtube-music
+Environment=PORT=5007
+Environment=CACHE_DIR=/var/lib/youtube-music
+Environment=ENABLE_VIDEO=0
+Environment=PATH=/opt/youtube-music/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/opt/youtube-music/venv/bin/python -u /opt/youtube-music/server.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

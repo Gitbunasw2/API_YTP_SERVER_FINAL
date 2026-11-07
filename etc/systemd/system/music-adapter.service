@@ -1,0 +1,14 @@
+[Unit]
+Description=Xiaozhi music adapter
+After=network.target mp3-api.service
+
+[Service]
+WorkingDirectory=/opt/music/adapter
+Environment=PORT=5006
+Environment=MP3_API_URL=http://127.0.0.1:5555
+ExecStart=/usr/bin/node xiaozhi-adapter.js
+Restart=always
+Environment=ADMIN_TOKEN=truyen
+
+[Install]
+WantedBy=multi-user.target

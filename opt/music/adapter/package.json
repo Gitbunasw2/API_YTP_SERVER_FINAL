@@ -1,0 +1,10 @@
+{
+  "name": "xiaozhi-adapter",
+  "version": "1.0.0",
+  "description": "Xiaozhi Music Adapter with Transcoding",
+  "main": "xiaozhi-adapter.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0"
+  }
+}
